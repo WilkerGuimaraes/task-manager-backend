@@ -6,5 +6,16 @@ POST http://localhost:3333/tasks
 Content-Type: application/json
 
 {
-    "description": "Criar o back-end do projeto 'task-manager'."
+    "description": "Completar o projeto 'task-manager' até amanhã."
 }
+
+###
+PATCH http://localhost:3333/tasks/66140550215dbd6ade8d4df4
+Content-Type: application/json
+
+{
+    "is_completed": true
+}
+
+###
+DELETE http://localhost:3333/tasks/6614065bb61a27d45d13fa59
