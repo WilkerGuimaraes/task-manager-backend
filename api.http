@@ -1,0 +1,10 @@
+GET http://localhost:3333/tasks
+
+###
+
+POST http://localhost:3333/tasks
+Content-Type: application/json
+
+{
+    "description": "Criar o back-end do projeto 'task-manager'."
+}
