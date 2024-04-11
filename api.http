@@ -6,7 +6,7 @@ POST http://localhost:3333/tasks
 Content-Type: application/json
 
 {
-    "description": "Executar os testes das requisições."
+    "description": "Criar o Front-end da aplicação 'task-manager'."
 }
 
 ###

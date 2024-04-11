@@ -1,8 +1,13 @@
 import fastify from "fastify";
+import fastifyCors from "@fastify/cors";
 
 import { tasksRoutes } from "./routes/tasks-routes.js";
 
 const app = fastify();
+app.register(fastifyCors, {
+  origin: "*",
+  methods: ["GET", "POST", "PATCH", "DELETE"],
+});
 
 tasksRoutes(app);
 
